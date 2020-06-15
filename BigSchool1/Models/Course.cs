@@ -9,6 +9,7 @@ namespace BigSchool1.Models
     public class Course
     {
         internal string LecturerId;
+        internal DateTime DateTime;
 
         public int Id { get; set; }
         public ApplicationUser Lecturer { get; set; }
@@ -19,5 +20,6 @@ namespace BigSchool1.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
+        public object Caregory { get; internal set; }
     }
 }
